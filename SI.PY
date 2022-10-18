@@ -1,0 +1,7 @@
+p=float(input('enter the principle amount = '))
+r=float(input('enter the value of rate = '))
+t=int(input('enter the value of time = '))
+si =float((p*r*t)/100)
+amt =float(si+p)
+print('simple interest =',si)
+print('amount =',amt)
