@@ -16,7 +16,10 @@ def update():
       #print('updating')
       p.x += 1
       p.angle = -10
-      if p.x > WIDTH:
-            p.x = 0
+      #if p.x > WIDTH:
+      #    p.x = 0
+      if p.x < 0:
+            p.x = WIDTH
       print(p.x,p.y)
+
 pgzrun.go()
