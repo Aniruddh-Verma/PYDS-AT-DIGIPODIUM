@@ -22,12 +22,12 @@ def p_move():
       elif keyboard.right or keyboard.D:
             p.x +=3
             p.angle = -10
-      elif keyboard.up or keyboard.W:
+      else:
+            p.angle = 0
+      if keyboard.up or keyboard.W:
             p.y -=3
       elif keyboard.down or keyboard.S:
             p.y +=3
-      else:
-            p.angle = 0
       pass
 def handle_boundary():
       if p.x > WIDTH:

@@ -11,10 +11,10 @@ def draw():
       screen.fill('white')
       p.draw()
       c.draw()
-      #print("drawing")
+      print("drawing")
 def update():
-      #print('updating')
-      p.x += 1
+      print('updating')
+      p.x -= 3
       p.angle = -10
       #if p.x > WIDTH:
       #    p.x = 0
