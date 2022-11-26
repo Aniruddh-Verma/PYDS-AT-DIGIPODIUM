@@ -16,7 +16,7 @@ music.set_volume(0.2)
 def draw():
       screen.fill('white')
       screen.draw.text(title,center=(WIDTH//2,30),fontsize = 60,
-          color = 'black', align = 'center', shadow=(.2,1),scolor = "red")
+          color = 'red', align = 'center', shadow=(.2,1),scolor = "black")
       screen.draw.text(f'score: {score}', (10,10), fontsize=50,
       color= 'black')
       #screen.draw.text(title,(10,10),fontsize = 30,color = 'black') 
@@ -39,7 +39,7 @@ def p_move():
 
 def update():
       global score       # tells python that we want to change the global variable score
-      p_move()   # function call
+      p_move()           # function call
       if p.colliderect(c):
             score +=1
             c.pos = (randint(0,WIDTH), randint(0,HEIGHT)) 
