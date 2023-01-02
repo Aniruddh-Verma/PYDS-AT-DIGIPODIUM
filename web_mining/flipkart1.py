@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 
-url = 'https://www.flipkart.com/search?q=shoes&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off'
+url = 'https://www.flipkart.com/search?q=bagss&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off'
 page = requests.get(url)
 if not page.status_code == 200:
       print('an error has occured.')
