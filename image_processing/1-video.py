@@ -1,6 +1,5 @@
 import cv2 
-path = r'D:\Fishes - 16166.mp4'
-video = cv2.VideoCapture(path)
+video = cv2.VideoCapture(0)
 
 while True:
       status, img = video.read()
